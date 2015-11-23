@@ -114,10 +114,19 @@ img {
 
 #talks a img {
     opacity: 0.8;
+    filter: gray; /* IE6-9 */
+    filter: grayscale(1); /* Firefox 35+ */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    
     padding-top: 3em;
     width: 60%;
     display: block;
     margin: 0 auto;
+}
+
+#talks a img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
 }
 
 .thumbnails a span {
@@ -274,6 +283,15 @@ p.small {
 	margin-bottom: 60px;
 }
 
+/* Touch device */
+@media screen and (pointer: none) {
+    #talks a img:hover {
+        filter: none;
+        -webkit-filter: grayscale(0);
+    }
+}
+
+/* Smaller screens */
 @media screen and (max-width: 540px) {
 	#page { padding: 20px 40px; }
 /*    .header { margin-bottom: 40px; }*/
