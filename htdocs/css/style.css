@@ -55,6 +55,10 @@ em {
     font-style: italic;
 }
 
+strong {
+    font-weight: bold;
+}
+
 #page {
 	max-width: 880px;
 	margin: 0 auto;
