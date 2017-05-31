@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -46,13 +46,14 @@
   </head>
 
 <body>
+<div itemscope itemtype="http://schema.org/Person">
   <section id="page">
     <section class="intro">
-      <header role="banner" class="about">
-        <img src="images/2014-11-15-avatar.jpg" width="200" height="200" alt="Hallo.">
-        <h1><span class="hallo">Hallo.</span> I am Martin Dittus. <span class="twitter">@<a href="https://twitter.com/dekstop">dekstop</a> on Twitter.</span></h1>
-       
-        <p>I am a <a href="https://www.oii.ox.ac.uk/people/martin-dittus/">researcher and data scientist</a> at the <a href="https://www.oii.ox.ac.uk/">Oxford Internet Institute</a>, where I study the economic geography of darknet marketplaces.</a>
+      <header class="about">
+        <img src="images/2014-11-15-avatar.jpg" width="200" height="200" itemprop="image" alt="Photo of Martin Dittus" />
+        <h1><span class="hallo">Hallo.</span> I am <span itemprop="name">Martin Dittus</span>. <span class="twitter">@<a href="https://twitter.com/dekstop">dekstop</a> on Twitter.</span></h1>
+        <div itemprop="description">
+            <p>I am a <a href="https://www.oii.ox.ac.uk/people/martin-dittus/"><span itemprop="jobtitle">researcher and data scientist</span></a> at the <a href="https://www.oii.ox.ac.uk/">Oxford Internet Institute</a>, where I study the economic geography of darknet marketplaces.</p>
 
         <p>Before that, I was a researcher in computer science at the <a href="http://www.cities.io/">ICRI Cities</a> at University College London, where I researched community engagement for the <a href="http://www.hotosm.org/">Humanitarian OpenStreetMap Team</a> (HOT), a volunteer initiative with thousands of contributors. At its core this was quantitative work, and my main outputs were statistics and data visualisations. I made use of the "hard" evidence of contributor data traces, but also the "soft" evidence of knowing the practices and motivations of the community. </p>
         
@@ -61,60 +62,61 @@
           a director and trustee of the <a href="https://london.hackspace.org.uk">London Hackspace</a>,
           an organiser for <a href="http://hackthebarbican.org">Hack the Barbican</a> and the <a href="https://www.emfcamp.org">Electromagnetic Field</a> camping festival,
           a cat herder for <a href="https://en.wikipedia.org/wiki/Air_Quality_Egg">Air Quality Egg</a> contributors, and more. My data visualisations have been featured in Infosthetics [<a href="http://infosthetics.com/archives/2006/10/music_chart_arcs.html" title="music habits chart arcs - information aesthetics">1</a>][<a href="http://infosthetics.com/archives/2011/09/revealing_the_listening_habits_of_lastfm_users.html" title="Revealing the Periodic Listening Habits of last.fm Users - information aesthetics">2</a>], Visual Complexity [<a href="http://visualcomplexity.com/vc/project.cfm?id=385" title="visualcomplexity.com | Chart Arcs">3</a>][<a href="http://www.visualcomplexity.com/vc/project.cfm?id=403" title="visualcomplexity.com | IRC Arcs">4</a>], FlowingData [<a href="http://flowingdata.com/2011/09/13/last-fm-scrobbles-as-calendar-heat-map/" title="Last.fm scrobbles as calendar heat map | FlowingData">5</a>], in print magazine De:Bug [<a href="http://datavis.dekstop.de/debug-2010/debug148_page_10.pdf" title="">6</a>], Manuel Lima’s Visual Complexity book [<a href="http://www.visualcomplexity.com/vc/book/" title="Visual Complexity: Mapping Patterns of Information">7</a>], the German-language Visual Simplexity book [<a href="http://www.amazon.de/Visual-Simplexity-Darstellung-großer-Datenmengen/dp/3868020993/">8</a>], and elsewhere.</p>
+        </div>
       </header>
     </section>
     
     <section class="listing" id="projects">
       <header class="header">
-        <h1>Featured work</h1>
+        <h2>Featured work</h2>
       </header>
 
       <section class="thumbnails clearfix">
       
           <a href="https://www.openstreetmap.org/user/dekstop/diary">
-            <img width="300" src="./images/projects/hot-world-map-20150521.png"/>
+            <img width="300" src="./images/projects/hot-world-map-20150521.png" alt="Research diary"/>
             <span><strong>Research diary</strong>: contributor engagement in humanitarian mapping</span>
           </a>
       
           <a href="https://www.openstreetmap.org/user/dekstop/diary/39935">
-            <img width="300" src="./images/projects/sotm_2016_timeline.png"/>
+            <img width="300" src="./images/projects/sotm_2016_timeline.png" alt="Research diary"/>
             <span>State of the Map 2016: Building large-scale crowdsourcing communities with the Humanitarian OpenStreetMap Team</span>
           </a>
 
           <a href="https://www.openstreetmap.org/user/dekstop/diary/38007">
-            <img width="300" src="./images/projects/overview_contributor_growth.png"/>
+            <img width="300" src="./images/projects/overview_contributor_growth.png" alt="Research diary"/>
             <span>OII Talk: Big Data and Putting the World's Vulnerable People on the Map</span>
           </a>
      
           <!-- 
           <a href="https://www.openstreetmap.org/user/dekstop/diary/37488">
-            <img width="300" src="./images/projects/josm_mapathons.png"/>
+            <img width="300" src="./images/projects/josm_mapathons.png" alt="Research diary"/>
             <span>Should we teach JOSM to first-time mapathon attendees?</span>
           </a>
           -->
       
           <a href="https://www.openstreetmap.org/user/dekstop/diary/36169">
-            <img width="300" src="./images/projects/mm_stats.png"/>
+            <img width="300" src="./images/projects/mm_stats.png" alt="Research diary"/>
             <span>Missing Maps: the first year in stats &amp; charts</span>
           </a>
       
           <a href="https://www.openstreetmap.org/user/dekstop/diary/36184">
-            <img width="300" src="./images/projects/participation-inequality.png"/>
+            <img width="300" src="./images/projects/participation-inequality.png" alt="Research diary"/>
             <span>Participation inequality in humanitarian mapping</span>
           </a>
       
           <a href="https://www.openstreetmap.org/user/dekstop/diary/36253">
-            <img width="300" src="./images/projects/unknown-pleasures-preview.png"/>
+            <img width="300" src="./images/projects/unknown-pleasures-preview.png" alt="Research diary"/>
             <span>Unknown Pleasures (of humanitarian mapping)</span>
             </a>
       
           <a href="./posts/sensors.html">
-            <img width="300" src="./images/projects/cosm-tag-cloud.png"/>
+            <img width="300" src="./images/projects/cosm-tag-cloud.png" alt="Research diary"/>
             <span>Collective Sensor Networks</span>
           </a>
       
           <a href="http://dekstop.de/weblog/2011/09/lastfm_heatmap_calendars/">
-            <img width="300" src="./images/projects/lastfm-heatmap-calendar.png"/>
+            <img width="300" src="./images/projects/lastfm-heatmap-calendar.png" alt="Visualisation"/>
             <span>Last.fm Heatmap Calendars</span>
           </a>
       
@@ -123,79 +125,79 @@
 
     <section class="listing" id="talks">
       <header class="header">
-        <h1>Featured talks</h1>
+        <h2>Featured talks</h2>
       </header>
 
       <section class="thumbnails clearfix">
      
           <a href="http://talks.dekstop.de/Martin%20Dittus%20CSCW2017%2020170228.pdf">
-            <img width="300" src="./images/talks/cscw2017.png"/>
+            <img width="300" src="./images/talks/cscw2017.png" alt="Talk slides"/>
             <span>Mass participation during emergency response:
             Event-centric crowdsourcing in humanitarian mapping</span>
           </a>
       
           <a href="https://www.openstreetmap.org/user/dekstop/diary/39935">
-            <img width="300" src="./images/talks/sotm2016.png"/>
+            <img width="300" src="./images/talks/sotm2016.png" alt="Talk slides"/>
             <span>Building Large-scale Crowdsourcing Communities with the Humanitarian OpenStreetMap Team</span>
           </a>
       
           <a href="https://www.openstreetmap.org/user/dekstop/diary/38007">
-            <img width="300" src="./images/talks/oii-missingmaps.png"/>
+            <img width="300" src="./images/talks/oii-missingmaps.png" alt="Talk slides"/>
             <span>Big Data and Putting the World's Vulnerable People on the Map</span>
           </a>
       
           <a href="https://www.openstreetmap.org/user/dekstop/diary/36169">
-            <img width="300" src="./images/talks/mm-powwow.png"/>
+            <img width="300" src="./images/talks/mm-powwow.png" alt="Talk slides"/>
             <span>Missing Maps: the first year in stats &amp; charts</span>
           </a>
       
           <a href="http://talks.dekstop.de/Martin%20Dittus%20%23hotsummit%2020150502.pdf">
-            <img width="300" src="./images/talks/hot-summit.png"/>
+            <img width="300" src="./images/talks/hot-summit.png" alt="Talk slides"/>
             <span>Contributor engagement in humanitarian mapping</span>
           </a>
       
           <!-- <a href="http://talks.dekstop.de/martin%20dittus%20-%20social%20innovation%20cities%202014-10-01.pdf">
-            <img width="300" src="./images/talks/innovation-cities-rome.png"/>
+            <img width="300" src="./images/talks/innovation-cities-rome.png" alt="Talk slides"/>
             <span>Open data sets collected by "everyone"</span>
             </a> -->
       
           <a href="http://talks.dekstop.de/mdittus%20ccss%202014-02-21%20diy%20sensor%20networks.pdf">
-            <img width="300" src="./images/talks/diy-sensor-networks.png"/>
+            <img width="300" src="./images/talks/diy-sensor-networks.png" alt="Talk slides"/>
             <span>DIY sensor networks: community-driven environmental monitoring</span>
           </a>
       
           <a href="http://talks.dekstop.de/urban%20data%20hack%202014-02-15.pdf">
-            <img width="300" src="./images/talks/urban-data-work.png"/>
+            <img width="300" src="./images/talks/urban-data-work.png" alt="Talk slides"/>
             <span>Urban data work: a practitioner’s perspective</span>
           </a>
       
           <!-- <a href="http://talks.dekstop.de/martin%20dittus%20-%20open%20hardware%20at%20LHS.pdf">
-            <img width="300" src="./images/talks/open-hardware.png"/>
+            <img width="300" src="./images/talks/open-hardware.png" alt="Talk slides"/>
             <span>V&amp;A Design Culture Salon: "Open" hardware projects at the London Hackspace, the highs and lows</span>
           </a> -->
       
           <!-- <a href="http://talks.dekstop.de/martin%20dittus%20-%20politics%20of%20making.pdf">
-            <img width="300" src="./images/talks/politics-of-making.png"/>
+            <img width="300" src="./images/talks/politics-of-making.png" alt="Talk slides"/>
             <span>Mini Maker Faire London: The Politics of Making</span>
           </a> -->
       
           <a href="http://talks.dekstop.de/martin%20dittus%20-%20community%20spaces.pdf">
-            <img width="300" src="./images/talks/creative-community-spaces.png"/>
+            <img width="300" src="./images/talks/creative-community-spaces.png" alt="Talk slides"/>
             <span>Creative community spaces: London Hackspace, Electromagnetic Field, and Hack the Barbican</span>
           </a>
       
           <!-- <a href="http://talks.dekstop.de/martind%20-%20Sensor%20Commons%20EMF%20talk%202012.pdf">
-            <img width="300" src="./images/talks/community-sensing.png"/>
+            <img width="300" src="./images/talks/community-sensing.png" alt="Talk slides"/>
             <span>A sensor commons: DIY environmental monitoring</span>
             </a> -->
       
           <!-- <a href="http://talks.dekstop.de/2009-04-23%20big%20data%20little%20money.pdf">
-            <img width="300" src="./images/talks/bigdata-little-money.png"/>
+            <img width="300" src="./images/talks/bigdata-little-money.png" alt="Talk slides"/>
             <span>London Geek Nights: Lots of data, little money. A Last.fm perspective</span>
           </a> -->
       
           <a href="http://talks.dekstop.de/osmotic%20friday%202008-05-30.pdf">
-            <img width="300" src="./images/talks/tags-tag-radio-at-lastfm.png"/>
+            <img width="300" src="./images/talks/tags-tag-radio-at-lastfm.png" alt="Talk slides"/>
             <span>Tags and tag radio at Last.fm</span>
           </a>
       
@@ -204,7 +206,7 @@
     
     <section class="listing" id="past">
       <header class="header">
-        <h1>Other activities</h1>
+        <h2>Other activities</h2>
       </header>
 
       <ul id="post-list">
@@ -289,7 +291,7 @@
     
     <section class="listing" id="links">
       <header class="header">
-        <h1>See also</h1>
+        <h2>See also</h2>
       </header>
       
       <ul>
@@ -317,6 +319,6 @@
     </footer>
     
   </section>
-
+</div>
 </body>
 </html>

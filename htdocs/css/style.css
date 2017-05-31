@@ -229,6 +229,14 @@ li    {
 h1 {
     line-height: 100%;
 	color: #222;
+	font-size: 36px;
+	margin: 0;
+	padding-bottom: 20px;
+}
+
+h2 {
+    line-height: 100%;
+	color: #222;
 	font-size: 28px;
 	margin: 0;
 	padding-bottom: 20px;
